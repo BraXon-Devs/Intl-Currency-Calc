@@ -1,0 +1,22 @@
+{
+  "name": "intl-currency-calc",
+  "version": "1.0.0",
+  "description": "A simple and easy-to-use currency exchange app that provides up-to-date currency exchange rates.",
+  "main": "app.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BraXon-Devs/Intl-Currency-Calc.git"
+  },
+  "author": "HelloMikko",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BraXon-Devs/Intl-Currency-Calc/issues"
+  },
+  "discussions ": {
+    "url": "https://github.com/BraXon-Devs/Intl-Currency-Calc/discussions"
+  },
+  "homepage": "https://github.com/BraXon-Devs/Intl-Currency-Calc#readme"
+}
