@@ -24,7 +24,7 @@ Demo 🖥️
 ![](https://i.imgur.com/pJWPLG0.png){:height="529" width="708"}
 
 
-![](https://i.imgur.com/AvTSqkH.png){:height="529" width="708"}
+![](https://i.imgur.com/AvTSqkH.png)
 
 
 
@@ -43,7 +43,7 @@ Getting Started: 💻
 2.  Install the required dependencies by running `npm install` in your terminal.
 3.  Run the app by executing the command `npm start` in the terminal.
 <!-- 4.  Open the app in your browser at [http://localhost:3000](http://localhost:3000/). -->
-4.  Start using the currency exchange app by selecting your base currency and the currency you want to exchange it to.
+1.  Start using the currency exchange app by selecting your base currency and the currency you want to exchange it to.
 
 Please note that the app might require some configurations, depending on your system, to run the app successfully.
 
