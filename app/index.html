@@ -12,10 +12,14 @@
   <body class="bg-gray-900 font-sans">
     <header class="bg-gray-900 px-6 py-3 shadow-md">
       <div class="container flex items-center justify-between">
-        <a href="#" class="font-medium text-white hover:gray-800">Intl Currency Calculator</a>
+        <a href="#" class="font-medium text-white">Intl Currency Calculator</a>
         <nav class="hidden md:flex items-center">
-          <a href="https://github.com/BraXon-Devs/Intl-Currency-Calc/issues/new" target="#blank" class="px-4 py-2 text-white hover:text-blue-600" title="Report a bug"><i class="fas fa-bug fa-sm text-white"></i></a>
-          <a href="https://github.com/BraXon-Devs/Intl-Currency-Calc/" target="#blank" class="px-4 py-2 text-white hover:text-blue-600" title="Report a bug"><i class="fab fa-github fa-sm text-white"></i></a>
+          <a href="liverates.html" target="#blank" class="px-4 py-2 text-white hover:text-blue-600" title="Check Live"><i class="fas fa-coins fa-1x text-white"></i></a>
+
+          <a href="https://github.com/BraXon-Devs/Intl-Currency-Calc/issues/" target="#blank" class="px-4 py-2 text-white hover:text-blue-600" title="Report a bug" onclick="window.open(this.href, 'popUpWindow', 'height=958,left=525,top=50,resizable=no,scrollbars=no,toolbar=no,menubar=no,location=no,directories=no, status=yes'); return false;"><i class="fas fa-bug fa-sm text-white"></i></a>
+
+
+          <a href="https://github.com/BraXon-Devs/Intl-Currency-Calc/" target="#blank" class="px-4 py-2 text-white hover:text-blue-600" title="See the project on Github!"><i class="fab fa-github fa-sm text-white"></i></a>
         </nav>
         <button id="toggle-dark-mode" class="relative px-1 py-1 text-gray-300 hover:text-blue-200" title="Toggle dark mode">
             <i id="icon" class="fas fa-adjust fa-lg"></i>
@@ -25,7 +29,26 @@
     <div class="content-div">
 
         <form class="bg-white p-6 rounded-lg flex flex-col items-center shadow-md">
-            <h1 id="exchangeRate" class="text-6xl">0</h1>
+          <h1 id="exchangeRate" class="text-6xl">0</h1>
+          <button id="copyBtn" class="bg-transparent hover:bg-blue-500  py-2 px-4 border border-transparent hover:border-transparent rounded" title="Copy">
+            <i class="fas fa-copy"></i>
+          </button>
+          
+          <script>
+            const copyBtn = document.getElementById("copyBtn");
+            const exchangeRate = document.getElementById("exchangeRate");
+            
+            copyBtn.addEventListener("click", () => {
+              const tempInput = document.createElement("input");
+              tempInput.value = exchangeRate.innerText;
+              document.body.appendChild(tempInput);
+              tempInput.select();
+              document.execCommand("copy");
+              document.body.removeChild(tempInput);
+              alert("Hey, each time you copy, $1 is donated to save the trees. Thank you!\n Your Exchange rate copied to clipboard!");
+            });
+          </script>
+          
             <div class="mt-10">
               💱<input type="text" id="amount" oninput="calculateExchangeRate()" class="border-none px-4 py-2 mb-4" placeholder="Input the Amount">
             </div>
@@ -367,13 +390,13 @@
         </div>  
 
         <div class="container mx-auto" style="margin-top: 4in;">
-            <p class="text-gray-500">
+          <p class="text-gray-500" style="font-size: 0.75em;">
               <i class="fas fa-dollar-sign" style="color: rgb(0, 255, 115);"></i> - The US dollar (USD) is the official currency of the United States of America. It is the world’s most widely traded currency.
               
               <a href="https://www.oanda.com/currency-converter/en/currencies/majors/usd/" target="#blank" title="The official currency of the United States of America" class="text-blue-500 hover:underline"> <i class="fas fa-exclamation-circle" style="color: rgb(177, 155, 57);"></i> </a>
           </p>
   
-          <p class="text-gray-500">
+          <p class="text-gray-500" style="font-size: 0.75em;">
             <i class="fas fa-euro-sign" style="color: rgb(52, 52, 248);"></i> - Euro
               The euro (EUR) is the official currency of 19 of the 27 member states of the European Union. As of the first quarter of 2021, the European Union, also known as the eurozone, consists of 27 member countries. The following countries have adopted the euro: Austria, Belgium, Cyprus, Estonia, Finland, France, Germany, Greece, Ireland, Italy, Latvia, Lithuania, Luxembourg, Malta, the Netherlands, Portugal, Slovakia, Slovenia and Spain.
               
