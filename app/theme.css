@@ -24,11 +24,13 @@ button i.fas {
     cursor: pointer;
     display: inline-flex;
     font-size: 1.25rem;
-    height: 3.5rem;
+    height: 1rem;
     justify-content: center;
     position: relative;
     transition: all 0.15s ease-in-out;
-    width: 3.5rem;
+    /* Icon issue */
+    width: 3rem;
+    /* End issue */
     margin-top: 1.3rem;
     align-self: center;
     vertical-align: middle;

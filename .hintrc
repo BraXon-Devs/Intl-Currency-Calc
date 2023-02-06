@@ -1,6 +1,5 @@
 {
   "extends": [
-    "development",
-    "div"
+    "development"
   ]
 }

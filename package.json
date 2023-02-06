@@ -13,8 +13,7 @@
   },
   "keywords": [],
   "dependencies": {
-    "electron-squirrel-startup": "^1.0.0",
-    "hint": "^2.0.0"
+    "electron-squirrel-startup": "^1.0.0"
   },
   "devDependencies": {
     "@electron-forge/cli": "^6.0.4",
@@ -22,6 +21,7 @@
     "@electron-forge/maker-rpm": "^6.0.4",
     "@electron-forge/maker-squirrel": "^6.0.4",
     "@electron-forge/maker-zip": "^6.0.4",
+    "@hint/hint-no-inline-styles": "^1.0.15",
     "electron": "22.2.0"
   },
   "repository": {

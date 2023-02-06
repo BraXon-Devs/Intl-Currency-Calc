@@ -1,12 +1,12 @@
-const { app, BrowserWindow } =  require('electron');
+const { app, BrowserWindow } = require('electron');
 
-let  mainWindow;
+let mainWindow;
 
 function createWindow() {
   mainWindow = new BrowserWindow({
-    width: 850,
-    height: 660,
-    frame: false,
+    width: 860,
+    height: 680,
+    resizable: false,
     webPreferences: {
       nodeIntegration: true
     }
@@ -14,8 +14,12 @@ function createWindow() {
 
   mainWindow.loadFile('app/index.html');
 
+  // Disable dev tools
+  // mainWindow.webContents.openDevTools();
   mainWindow.webContents.closeDevTools();
+  // Remove the menu bar
   mainWindow.setMenu(null);
+  // Set menu bar visibility to false
   mainWindow.setMenuBarVisibility(false);
 
   mainWindow.on('closed', function () {
@@ -33,3 +37,11 @@ app.on('activate', function () {
   if (mainWindow === null) createWindow();
 });
 
+app.on('browser-window-created', (event, window) => {
+  // Disable dev tools
+  window.webContents.closeDevTools();
+  // Remove the menu bar
+  window.setMenu(null);
+  // Set menu bar visibility to false
+  window.setMenuBarVisibility(false);
+});
