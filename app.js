@@ -15,8 +15,8 @@ function createWindow() {
   mainWindow.loadFile('app/index.html');
 
   // Disable dev tools
-  mainWindow.webContents.openDevTools();
-  // mainWindow.webContents.closeDevTools();
+  // mainWindow.webContents.openDevTools();
+  mainWindow.webContents.closeDevTools();
   // Remove the menu bar
   mainWindow.setMenu(null);
   // Set menu bar visibility to false
