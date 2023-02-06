@@ -53,6 +53,18 @@ Here are a few ways to get involved:
 
 Before contributing, please review the contribution guidelines in the [CONTRIBUTING.md](https://github.com/BraXon-Devs/Currency-Exchange/blob/master/CONTRIBUTING.md) file.
 
+ToDO📙
+-------------
+
+- [ ] Add local time and date
+- [ ] Create live web version on Vercel
+- [ ] Create version from package.json using `grunt`
+- [ ] Update Readme.md
+- [ ] Add logo to the project
+- [-] Convert desktop app to web app for Vercel
+- [ ] Add grunt integration for realtime live version updates
+
+
 
 Support
 -------
