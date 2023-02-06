@@ -14,7 +14,7 @@
   "keywords": [],
   "dependencies": {
     "electron-squirrel-startup": "^1.0.0",
-    "hint": "^7.1.3"
+    "hint": "^2.0.0"
   },
   "devDependencies": {
     "@electron-forge/cli": "^6.0.4",
