@@ -21,7 +21,7 @@ Features 🎉
 
 Demo 🖥️
 -----------
-![](https://i.imgur.com/pJWPLG0.png){:height="529" width="708"}
+![](https://i.imgur.com/pJWPLG0.png)
 
 
 ![](https://i.imgur.com/AvTSqkH.png)
