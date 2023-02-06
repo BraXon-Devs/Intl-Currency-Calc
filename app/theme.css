@@ -3,7 +3,7 @@ body {
 }
 
 header {
-  box-shadow: 0px 4px 20px #7e7d7d1a;
+  box-shadow: 0px 4px 20px #1e293b;
 }
 
 .container {
@@ -67,7 +67,7 @@ button:focus {
  
   body.dark-mode {
     background-color: #FCFBE3;
-    color: #000;
+    color: #1e293b;
   }
   
 
