@@ -73,6 +73,7 @@ ToDO📙
 - [ ] Add logo to the project
 - [-] Convert desktop app to web app for Vercel
 - [ ] Add grunt integration for realtime live version updates
+- [ ] Updated links to correct locations
 
 
 
