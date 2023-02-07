@@ -1,7 +1,7 @@
 {
   "name": "intl-currency-calc",
   "productName": "Intl. Currency Calculator",
-  "version": "1.0.0",
+  "version": "1.0.9",
   "description": "A simple and easy-to-use currency exchange app that provides up-to-date currency exchange rates.",
   "main": "app.js",
   "scripts": {
@@ -9,11 +9,14 @@
     "package": "electron-forge package",
     "make": "electron-forge make",
     "publish": "electron-forge publish",
-    "lint": "echo \"No linting configured\""
+    "lint": "echo \"No linting configured\"",
+    "update-version": "node update-version.js"
   },
   "keywords": [],
   "dependencies": {
-    "electron-squirrel-startup": "^1.0.0"
+    "electron-squirrel-startup": "^1.0.0",
+    "fs": "^0.0.1-security",
+    "grunt": "^1.6.1"
   },
   "devDependencies": {
     "@electron-forge/cli": "^6.0.4",
@@ -38,5 +41,6 @@
   "discussions": {
     "url": "https://github.com/BraXon-Devs/Intl-Currency-Calc/discussions"
   },
-  "homepage": "https://github.com/BraXon-Devs/Intl-Currency-Calc#readme"
+  "homepage": "https://github.com/BraXon-Devs/Intl-Currency-Calc#readme",
+  "type": "module"
 }
