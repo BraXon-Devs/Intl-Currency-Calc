@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" rel="stylesheet">
+    <link href="udthemes.css" rel="stylesheet">
     <title>GitHub Commits</title>
 </head>
-<body class="bg-gray-900 text-white h-screen">
+
+<body class="bg-gray-900 h-screen">
     <div class="container mx-auto mt-20">
         <div class="bg-gray-800 rounded-lg p-4">
             <h1 class="text-white text-lg font-medium mb-4">Commits</h1>
-            <table class="table-auto w-full text-left border-gray-700 border-collapse">
+            <table class="table-black border-slate-800">
                 <thead>
                     <tr>
                         <th class="px-4 py-2">SHA</th>
@@ -24,12 +27,13 @@
         </div>
     </div>
     <script>
-        fetch('https://api.github.com/repos/BraXon-Devs/Intl-Currency-Calc/commits').then(response => response.json()).then(
-            commits => {
-                const commitsList = document.querySelector('#commits');
-                commits.forEach(commit => {
-                    const tr = document.createElement('tr');
-                    tr.innerHTML = `
+        fetch('https://api.github.com/repos/BraXon-Devs/Intl-Currency-Calc/commits').then(response => response.json())
+            .then(
+                commits => {
+                    const commitsList = document.querySelector('#commits');
+                    commits.forEach(commit => {
+                        const tr = document.createElement('tr');
+                        tr.innerHTML = `
                           <td class="border px-4 py-2">
                             <a href="${commit.html_url
                     }" target="_blank" class="text-indigo-600 hover:text-indigo-300">${commit.sha.substring(0, 7)
@@ -50,9 +54,10 @@
       </span>
     </td>
                         `;
-                    commitsList.appendChild(tr);
+                        commitsList.appendChild(tr);
+                    });
                 });
-            });
     </script>
 </body>
+
 </html>
