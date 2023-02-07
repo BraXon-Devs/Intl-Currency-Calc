@@ -1,0 +1,18 @@
+.table-black {
+    background-color: #1b123a;
+    color: #fff;
+    border-color: #1b123a;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table-black th, .table-black td {
+    padding: 0.75rem;
+    text-align: left;
+    border: 1px solid #1e2329;
+}
+
+.table-black th {
+    background-color: #1b123a;
+    font-weight: bold;
+}
