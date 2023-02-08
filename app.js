@@ -73,7 +73,7 @@ fs.writeFileSync('./package.json', JSON.stringify(packageJson, null, 2), functio
 
 (function () {
   async function myFunction() {
-    const forgeConfig = await import('forge.config.cjs');
+    const forgeConfig = await import('/forge.config.cjs');
     // use forgeConfig here
   }
 
