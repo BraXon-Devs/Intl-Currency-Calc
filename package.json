@@ -15,7 +15,7 @@
   "keywords": [],
   "dependencies": {
     "electron-squirrel-startup": "^1.0.0",
-    "fs": "^0.0.1-security",
+    "fs": "^0.0.2",
     "grunt": "^1.6.1"
   },
   "devDependencies": {
@@ -24,7 +24,6 @@
     "@electron-forge/maker-rpm": "^6.0.4",
     "@electron-forge/maker-squirrel": "^6.0.4",
     "@electron-forge/maker-zip": "^6.0.4",
-    "@hint/hint-no-inline-styles": "^1.0.15",
     "electron": "22.2.0"
   },
   "repository": {
