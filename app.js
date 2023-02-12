@@ -15,7 +15,7 @@ function createWindow() {
     }
   });
 
-  fs.readFile('./app/index.html', 'utf8', function (err, data) {
+  fs.readFile('app/index.html', 'utf8', function (err, data) {
     if (err) throw err;
 
     // Disable dev tools
@@ -33,13 +33,13 @@ function createWindow() {
     const updatedData = data.replace(/<span id="version">.*<\/span>/, `<span id="version">${packageJson.version}</span>`);
 
     // write the updated index.html file
-    fs.writeFileSync('./app/index.html', updatedData, function (err) {
+    fs.writeFileSync('app/index.html', updatedData, function (err) {
       if (err) throw err;
       console.log('Version number updated in index.html');
     });
 
     // Load the updated index.html file
-    mainWindow.loadFile('./app/index.html');
+    mainWindow.loadFile('app/index.html');
   });
 }
 
@@ -66,14 +66,14 @@ app.on('browser-window-created', (event, window) => {
 packageJson.version = process.env.npm_package_version;
 
 // write the updated packageJson object to the package.json file
-fs.writeFileSync('./package.json', JSON.stringify(packageJson, null, 2), function (err) {
+fs.writeFileSync('package.json', JSON.stringify(packageJson, null, 2), function (err) {
   if (err) throw err;
   console.log('Version number updated in package.json');
 });
 
 (function () {
   async function myFunction() {
-    const forgeConfig = await import('/forge.config.cjs');
+    const forgeConfig = await import('forge.config.cjs');
     // use forgeConfig here
   }
 

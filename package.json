@@ -1,9 +1,9 @@
 {
   "name": "intl-currency-calc",
   "productName": "Intl. Currency Calculator",
-  "version": "1.0.15",
+  "version": "1.0.16",
   "description": "A simple and easy-to-use currency exchange app that provides up-to-date currency exchange rates.",
-  "main": "/app.js",
+  "main": "app.js",
   "scripts": {
     "start": "electron-forge start",
     "package": "electron-forge package",
